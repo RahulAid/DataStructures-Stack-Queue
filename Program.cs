@@ -10,7 +10,13 @@
             stk.Push(56);
             stk.Push(30);
             stk.Push(70);
-            stk.Display(); 
+
+            stk.Peek();
+            stk.Pop();
+            stk.Display();
+            stk.Peek();
+            stk.Pop();
+            stk.Display();
         }
     }
 }

@@ -30,6 +30,27 @@ namespace DataStructures_Stack_Queue
             Console.WriteLine($"{data} pushed to Stack");
         }
 
+        public void Peek()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("\nEmpty Stack");
+                return;
+            }
+            Console.WriteLine($"\n{head.data} is on the top of the Stack");
+        }
+
+        public void Pop()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("\nEmpty Stack");
+                return;
+            }
+            Console.WriteLine($"\nPopped Element : {head.data}");
+            head = head.next;
+        }
+
         public void Display()
         {
             int size = 0;
@@ -39,7 +60,7 @@ namespace DataStructures_Stack_Queue
                 Console.WriteLine("\nStack is empty");
                 return;
             }
-            Console.Write("\nStack Elements => ");
+            Console.Write("\nStack Elements : ");
             while (temp != null)
             {
                 Console.Write(temp.data + " ");
