@@ -30,7 +30,24 @@ namespace DataStructures_Stack_Queue
             }
             Console.WriteLine($"\n{data} is inserted into the Queue");
         }
-        
+
+        public void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("\nQueue is Empty");
+                return;
+            }
+            Node temp = this.head;
+            this.head = this.tail.next;
+
+            if (this.head == null)
+            {
+                this.tail = null;
+            }
+            Console.WriteLine($"\n{temp.data} is deleted from the Queue");
+        }
+
         public void Display()
         {
             int size = 0;

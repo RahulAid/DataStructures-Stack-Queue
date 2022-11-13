@@ -13,6 +13,9 @@ namespace DataStructures_Stack_Queue
             objList.Enqueue(30);
             objList.Enqueue(70);
             objList.Display();
+            objList.Dequeue();
+            objList.Display();
+
         }
     }
 }
