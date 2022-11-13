@@ -1,4 +1,6 @@
-﻿namespace DataStructures_Stack_Queue
+﻿using System.Collections.Generic;
+
+namespace DataStructures_Stack_Queue
 {
     internal class Program
     {
@@ -6,17 +8,11 @@
         {
             Console.WriteLine("Welcome to Stack and Queue Problem");
 
-            Stack stk = new Stack();
-            stk.Push(56);
-            stk.Push(30);
-            stk.Push(70);
-
-            stk.Peek();
-            stk.Pop();
-            stk.Display();
-            stk.Peek();
-            stk.Pop();
-            stk.Display();
+            Queue objList = new Queue();
+            objList.Enqueue(56);
+            objList.Enqueue(30);
+            objList.Enqueue(70);
+            objList.Display();
         }
     }
 }
