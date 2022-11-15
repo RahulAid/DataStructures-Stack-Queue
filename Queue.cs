@@ -25,7 +25,7 @@ namespace DataStructures_Stack_Queue
             }
             else
             {
-                this.tail.next = objNode;
+                this.tail.next = this.tail;
                 this.tail = objNode;
             }
             Console.WriteLine($"\n{data} is inserted into the Queue");
